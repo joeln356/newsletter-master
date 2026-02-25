@@ -37,13 +37,18 @@ h1{
 section{
     box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03), 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
     background-color: #fff;
+    
     border-radius: 15px;
+    display: flex;
 }
 .input > input, button, div{
     text-align: center;
     width: fit-content;
     width: 100%;
     padding: 14px;
+    
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 15px;
     border-radius: 15px;
 }
@@ -68,6 +73,7 @@ section{
     padding:0px;
     width: fit-content;
     font-size: 12px;
+    margin-bottom: 0px;
     text-align: left;
     color: #6C727F;
 }
@@ -78,4 +84,26 @@ section{
 }
 .author-info a {
     text-decoration: none;
+}
+
+@media screen and (min-width:1024px){
+    h1{
+        font-size: 48px;
+    }
+    .subheading{
+        font-size: 20px;
+    }
+    section{
+        margin: 0px auto;
+        width: 500px;
+    }
+    .input > div{
+        font-size: 14px;
+    }
+    .input > button{
+        font-size: 16px;
+    }
+    .input > input{
+        font-size: 16px;
+    }
 }
